@@ -67,7 +67,7 @@ Server will start at localhost: [http://localhost:5000](http://localhost:5000)
 
 ## 📤 How It Works
 
-1. Go to `http://localhost:3000`
+1. Go to `http://localhost:5000`
 2. Upload:
 
    * Current year **employee list**
