@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Santa Upload</title>
+</head>
+<body>
+  <h2>Upload Excel Files for Secret Santa</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label>Employee List:</label>
+    <input type="file" name="employees" accept=".xlsx" required /><br><br>
+
+    <label>Previous Assignments:</label>
+    <input type="file" name="previous" accept=".xlsx" required /><br><br>
+
+    <button type="submit">Generate Assignments</button>
+  </form>
+  <br />
+  <!-- <a href="/download" target="_blank">Download Result</a> -->
+</body>
+</html>
