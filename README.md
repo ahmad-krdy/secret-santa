@@ -1,10 +1,12 @@
-# Secret Santa Assignment System
+#  Secret Santa Assignment System
 
 This project is a modular and extensible **Secret Santa Assignment Generator** built in **Node.js**, using **Express** and **Multer**, with a clean OOP architecture. It automatically assigns each employee a secret child (gift recipient), ensuring no self-assignment and no repetition from the previous year.
 
 ---
 
 ## 📁 Folder Structure
+
+```
 secret-santa-game/
 ├── src/
 │   ├── controllers/
@@ -18,11 +20,9 @@ secret-santa-game/
 │   │   └── SantaService.js
 │   ├── utils/
 │   │   └── ExcelHandler.js
-│   └── app.js
-├── results/               # Output Excel files (auto-created)
+│   └── server.js
+├── results/               # Output Excel files
 ├── uploads/               # Uploaded Excel files (temporary)
-├── views/                 # HTML form to upload files
-│   └── index.html
 ├── package.json
 └── README.md
 ```
@@ -40,10 +40,10 @@ npm install
 ### 2. ▶️ Run the App
 
 ```bash
-node src/app.js
+npm run dev
 ```
 
-Server will start at: [http://localhost:5000](http://localhost:5000)
+Server will start at localhost: [http://localhost:5000](http://localhost:5000)
 
 ---
 
@@ -67,7 +67,7 @@ Server will start at: [http://localhost:5000](http://localhost:5000)
 
 ## 📤 How It Works
 
-1. Go to `http://localhost:5000`
+1. Go to `http://localhost:3000`
 2. Upload:
 
    * Current year **employee list**
@@ -90,9 +90,3 @@ Server will start at: [http://localhost:5000](http://localhost:5000)
 ## 👨‍💻 Author
 
 * Developed by Ahmad Abbas
-
----
-
-## 📄 License
-
-MIT
